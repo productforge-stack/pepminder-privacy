@@ -1,0 +1,463 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>How to Track Your Peptide Protocol (The Complete Guide) — PepMinder Blog</title>
+  <meta name="description" content="Learn how to track peptide doses, manage reconstitution dates, calculate dosing, and stay organized with multiple peptides. Free guide for BPC-157, semaglutide, tirzepatide, and more.">
+  <meta name="keywords" content="how to track peptide doses, peptide tracking guide, peptide dose calculator, reconstitution tracking, BPC-157 tracking, semaglutide dose tracking, peptide protocol management">
+  <meta name="author" content="PepMinder">
+  <link rel="canonical" href="https://pepminder.app/blog/how-to-track-your-peptide-protocol.html">
+
+  <!-- Open Graph -->
+  <meta property="og:title" content="How to Track Your Peptide Protocol — The Complete Guide">
+  <meta property="og:description" content="Everything you need to stay organized with peptides: dose calculations, expiration tracking, injection site rotation, and progress monitoring.">
+  <meta property="og:type" content="article">
+  <meta property="og:url" content="https://pepminder.app/blog/how-to-track-your-peptide-protocol.html">
+  <meta property="og:image" content="https://pepminder.app/images/calculator_screen.jpg">
+
+  <!-- Twitter -->
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:title" content="How to Track Your Peptide Protocol — The Complete Guide">
+  <meta name="twitter:description" content="Dose calculations, expiration tracking, injection rotation & more. The practical guide nobody gives you.">
+
+  <!-- Article structured data -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "Article",
+    "headline": "How to Track Your Peptide Protocol: The Complete Guide",
+    "description": "A comprehensive guide to tracking peptide doses, managing reconstitution dates, calculating dosing, and staying organized with multiple peptides.",
+    "author": {
+      "@type": "Organization",
+      "name": "PepMinder"
+    },
+    "publisher": {
+      "@type": "Organization",
+      "name": "PepMinder",
+      "url": "https://pepminder.app"
+    },
+    "datePublished": "2026-02-12",
+    "dateModified": "2026-02-12",
+    "mainEntityOfPage": "https://pepminder.app/blog/how-to-track-your-peptide-protocol.html"
+  }
+  </script>
+
+  <!-- FAQ structured data for rich snippets -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "FAQPage",
+    "mainEntity": [
+      {
+        "@type": "Question",
+        "name": "How do I calculate my peptide dose in units?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "First calculate your concentration: divide the peptide amount (in mcg) by the BAC water volume (in mL). Then divide your desired dose by the concentration to get mL, and multiply by 100 to convert to units. For example, a 5mg vial with 2mL BAC water = 2500mcg/mL. For a 250mcg dose: 250 ÷ 2500 = 0.1mL = 10 units."
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "How long do reconstituted peptides last?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "Most reconstituted peptides last 3-4 weeks when refrigerated with bacteriostatic water. BPC-157 and TB-500 are typically good for 3-4 weeks, GH peptides for 2-3 weeks, and GLP-1s like semaglutide for 4-6 weeks. Always check your specific source's guidance and keep vials refrigerated."
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "Why should I track my peptide injections?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "Tracking prevents missed or double doses, helps rotate injection sites to avoid tissue damage, monitors expiration dates for safety, and creates a log you can review to correlate your protocol with results. It also helps you stay consistent, which is the biggest factor in getting results from peptides."
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "What is the best way to track multiple peptides at once?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "Use a dedicated peptide tracking app like PepMinder that stores each peptide's concentration, schedule, and expiration date separately. Physical labeling (Sharpie on each vial with name and reconstitution date) combined with digital tracking is the most reliable system for managing complex stacks."
+        }
+      }
+    ]
+  }
+  </script>
+
+  <style>
+    *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+    :root {
+      --bg: #0a0e17;
+      --bg-card: #111827;
+      --accent: #00d4aa;
+      --accent2: #6366f1;
+      --accent-glow: rgba(0, 212, 170, 0.15);
+      --text: #e2e8f0;
+      --text-dim: #94a3b8;
+      --radius: 16px;
+    }
+    html { scroll-behavior: smooth; }
+    body {
+      font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, sans-serif;
+      background: var(--bg);
+      color: var(--text);
+      line-height: 1.7;
+      overflow-x: hidden;
+    }
+    a { color: var(--accent); text-decoration: none; }
+    a:hover { text-decoration: underline; }
+    img { max-width: 100%; height: auto; }
+
+    /* Nav */
+    nav {
+      position: fixed; top: 0; left: 0; right: 0; z-index: 100;
+      background: rgba(10, 14, 23, 0.85);
+      backdrop-filter: blur(20px);
+      border-bottom: 1px solid rgba(255,255,255,0.05);
+      padding: 16px 0;
+    }
+    nav .container { display: flex; align-items: center; justify-content: space-between; max-width: 1100px; margin: 0 auto; padding: 0 24px; }
+    .nav-brand { display: flex; align-items: center; gap: 10px; font-weight: 700; font-size: 1.2rem; color: var(--text); }
+    .nav-brand img { width: 36px; height: 36px; border-radius: 8px; }
+    .nav-links { display: flex; gap: 28px; align-items: center; }
+    .nav-links a { color: var(--text-dim); font-size: 0.9rem; transition: color 0.2s; }
+    .nav-links a:hover { color: var(--accent); text-decoration: none; }
+    .nav-cta {
+      background: var(--accent); color: var(--bg) !important; font-weight: 700;
+      padding: 8px 20px; border-radius: 8px; font-size: 0.85rem;
+    }
+
+    /* Article */
+    .article-container {
+      max-width: 760px; margin: 0 auto; padding: 120px 24px 80px;
+    }
+    .article-meta {
+      color: var(--text-dim); font-size: 0.9rem; margin-bottom: 12px;
+    }
+    .article-container h1 {
+      font-size: 2.4rem; font-weight: 900; line-height: 1.15; margin-bottom: 24px;
+      background: linear-gradient(135deg, var(--accent), var(--accent2));
+      -webkit-background-clip: text; -webkit-text-fill-color: transparent; background-clip: text;
+    }
+    .article-intro {
+      font-size: 1.15rem; color: var(--text-dim); margin-bottom: 48px;
+      padding-bottom: 32px; border-bottom: 1px solid rgba(255,255,255,0.08);
+    }
+    .article-container h2 {
+      font-size: 1.6rem; font-weight: 800; margin: 48px 0 16px;
+      color: var(--text);
+    }
+    .article-container h3 {
+      font-size: 1.2rem; font-weight: 700; margin: 32px 0 12px;
+      color: var(--accent);
+    }
+    .article-container p {
+      margin-bottom: 18px; font-size: 1.05rem;
+    }
+    .article-container ul, .article-container ol {
+      margin: 0 0 24px 24px;
+    }
+    .article-container li {
+      margin-bottom: 10px; font-size: 1.05rem;
+    }
+    .article-container strong { color: var(--text); }
+
+    /* Callout boxes */
+    .callout {
+      background: var(--bg-card);
+      border-left: 4px solid var(--accent);
+      border-radius: 0 var(--radius) var(--radius) 0;
+      padding: 24px 28px;
+      margin: 28px 0;
+    }
+    .callout.warning { border-left-color: #f59e0b; }
+    .callout h4 { font-size: 1rem; margin-bottom: 8px; }
+    .callout p { margin-bottom: 0; font-size: 0.95rem; color: var(--text-dim); }
+
+    /* Math block */
+    .math-block {
+      background: var(--bg-card);
+      border-radius: var(--radius);
+      padding: 24px 28px;
+      margin: 24px 0;
+      font-family: 'Courier New', Courier, monospace;
+      font-size: 0.95rem;
+      line-height: 2;
+      border: 1px solid rgba(255,255,255,0.06);
+    }
+    .math-block .result { color: var(--accent); font-weight: 700; }
+
+    /* CTA box */
+    .cta-box {
+      background: linear-gradient(135deg, rgba(0,212,170,0.1), rgba(99,102,241,0.1));
+      border: 1px solid rgba(0,212,170,0.2);
+      border-radius: var(--radius);
+      padding: 36px;
+      text-align: center;
+      margin: 48px 0;
+    }
+    .cta-box h3 {
+      color: var(--text); font-size: 1.4rem; margin-bottom: 12px;
+    }
+    .cta-box p { color: var(--text-dim); margin-bottom: 20px; }
+    .cta-button {
+      display: inline-block;
+      background: var(--accent); color: var(--bg); font-weight: 700;
+      padding: 14px 32px; border-radius: 10px; font-size: 1rem;
+      transition: opacity 0.2s;
+    }
+    .cta-button:hover { opacity: 0.9; text-decoration: none; }
+
+    /* Table */
+    .article-table {
+      width: 100%; border-collapse: collapse; margin: 24px 0;
+      font-size: 0.95rem;
+    }
+    .article-table th, .article-table td {
+      padding: 12px 16px; text-align: left;
+      border-bottom: 1px solid rgba(255,255,255,0.06);
+    }
+    .article-table th {
+      color: var(--accent); font-weight: 700; font-size: 0.85rem;
+      text-transform: uppercase; letter-spacing: 0.05em;
+    }
+    .article-table td { color: var(--text-dim); }
+
+    /* Footer */
+    footer {
+      padding: 40px 0; text-align: center;
+      border-top: 1px solid rgba(255,255,255,0.05);
+    }
+    footer p { color: var(--text-dim); font-size: 0.85rem; }
+    .footer-links { display: flex; gap: 24px; justify-content: center; margin-bottom: 16px; }
+
+    @media (max-width: 768px) {
+      .article-container { padding: 100px 20px 60px; }
+      .article-container h1 { font-size: 1.8rem; }
+      .article-container h2 { font-size: 1.3rem; }
+      .nav-links { display: none; }
+    }
+  </style>
+</head>
+<body>
+
+<!-- Nav -->
+<nav>
+  <div class="container">
+    <a href="/" class="nav-brand">
+      <img src="/images/PepMinder_logo.svg" alt="PepMinder logo" width="36" height="36">
+      PepMinder
+    </a>
+    <div class="nav-links">
+      <a href="/#features">Features</a>
+      <a href="/blog/">Blog</a>
+      <a href="https://play.google.com/store/apps/details?id=com.pepminder.pep_minder" class="nav-cta" target="_blank" rel="noopener">Get the App</a>
+    </div>
+  </div>
+</nav>
+
+<article class="article-container">
+  <p class="article-meta">Published February 12, 2026 · 8 min read</p>
+  <h1>How to Track Your Peptide Protocol: The Complete Guide</h1>
+  <p class="article-intro">You've done the research, ordered your peptides, and figured out your protocol. Now comes the part nobody talks about: actually staying organized. Whether you're running a simple BPC-157 cycle or managing a multi-peptide stack with semaglutide, this guide covers everything you need to track your peptide protocol safely and consistently.</p>
+
+  <h2>Why Tracking Your Peptides Matters</h2>
+  <p>Peptides aren't like taking a daily vitamin. There's real math involved — reconstitution concentrations, mcg-to-units conversions, expiration dates that vary by compound. Most people start with good intentions and a notes app, then three weeks in they're guessing whether they already dosed this morning.</p>
+  <p>Here's what can go wrong without a tracking system:</p>
+  <ul>
+    <li><strong>Missed doses</strong> — inconsistency is the #1 reason peptide protocols fail</li>
+    <li><strong>Double dosing</strong> — "Did I already take that?" is a dangerous guessing game</li>
+    <li><strong>Expired peptides</strong> — reconstituted vials degrade, and using degraded peptides means wasted money and zero results</li>
+    <li><strong>Wrong calculations</strong> — different concentrations across vials mean different draw volumes, and math at 6 AM is risky</li>
+    <li><strong>Injection site issues</strong> — hitting the same spot repeatedly leads to lumps, bruising, and poor absorption</li>
+  </ul>
+
+  <h2>The 5 Things You Need to Track</h2>
+
+  <h3>1. Reconstitution Details</h3>
+  <p>When you reconstitute a peptide vial, you're creating a unique concentration. A 5mg vial with 1mL of BAC water has a very different concentration than the same 5mg vial with 2mL. Every calculation you do afterward depends on getting this right.</p>
+  <p>Record for each vial:</p>
+  <ul>
+    <li>Peptide name and vial size (mg)</li>
+    <li>Amount of bacteriostatic water added (mL)</li>
+    <li>Resulting concentration (mcg/mL)</li>
+    <li>Date reconstituted</li>
+  </ul>
+
+  <div class="callout">
+    <h4>💡 Pro tip</h4>
+    <p>Write the reconstitution date directly on every vial with a Sharpie. Your future self will thank you.</p>
+  </div>
+
+  <h3>2. Dose Calculations</h3>
+  <p>This is where most people struggle. The formula itself is straightforward, but doing it correctly across multiple peptides with different concentrations is where errors creep in.</p>
+
+  <div class="math-block">
+    <strong>Step 1:</strong> Concentration = Peptide (mcg) ÷ BAC water (mL)<br>
+    <strong>Step 2:</strong> Volume needed = Desired dose (mcg) ÷ Concentration (mcg/mL)<br>
+    <strong>Step 3:</strong> Units on syringe = Volume (mL) × 100<br><br>
+    <strong>Example:</strong><br>
+    5mg vial + 2mL BAC water = <span class="result">2,500 mcg/mL</span><br>
+    250mcg dose ÷ 2,500 mcg/mL = <span class="result">0.1 mL</span><br>
+    0.1 mL × 100 = <span class="result">10 units</span> on the syringe
+  </div>
+
+  <p>Now imagine doing this for three different peptides at three different concentrations, first thing in the morning. A dose calculator — or at minimum a written reference card — is essential.</p>
+
+  <h3>3. Expiration Dates</h3>
+  <p>Reconstituted peptides have a shelf life, and it's shorter than most people think. Once that freeze-dried powder meets water, the clock starts ticking.</p>
+
+  <table class="article-table">
+    <thead>
+      <tr>
+        <th>Peptide</th>
+        <th>Refrigerated Shelf Life</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr><td>BPC-157</td><td>3–4 weeks</td></tr>
+      <tr><td>TB-500</td><td>3–4 weeks</td></tr>
+      <tr><td>CJC-1295 / Ipamorelin</td><td>2–3 weeks</td></tr>
+      <tr><td>GHK-Cu</td><td>3–4 weeks</td></tr>
+      <tr><td>Semaglutide</td><td>4–6 weeks (check source)</td></tr>
+      <tr><td>Tirzepatide</td><td>4–6 weeks (check source)</td></tr>
+    </tbody>
+  </table>
+
+  <div class="callout warning">
+    <h4>⚠️ Temperature matters more than time</h4>
+    <p>A vial that sat out at room temperature for several hours may be compromised even if it's within its date range. Always refrigerate reconstituted peptides promptly.</p>
+  </div>
+
+  <h3>4. Injection Sites</h3>
+  <p>Rotating injection sites isn't optional — it's critical for absorption and tissue health. Hitting the same spot repeatedly causes scar tissue, lumps, and reduced effectiveness.</p>
+  <p>Common subcutaneous injection sites:</p>
+  <ul>
+    <li>Abdomen (most common — avoid 2 inches around the navel)</li>
+    <li>Thigh (outer, upper area)</li>
+    <li>Upper arm (back of the arm)</li>
+    <li>Love handles / flanks</li>
+  </ul>
+  <p>A simple rotation system: pick 4-6 sites, number them, and cycle through in order. Log which site you used each time so you never have to guess.</p>
+
+  <h3>5. Your Progress</h3>
+  <p>This is the part that keeps you motivated and helps you evaluate whether your protocol is actually working. Track:</p>
+  <ul>
+    <li><strong>Weight</strong> — weekly, same day and time (morning, after bathroom)</li>
+    <li><strong>Progress photos</strong> — same lighting, same angle, same clothing. Side-by-side comparisons over weeks are incredibly motivating and the most honest measure of change</li>
+    <li><strong>Subjective notes</strong> — energy levels, sleep quality, recovery time, appetite changes</li>
+    <li><strong>Side effects</strong> — nausea, injection site reactions, anything unusual</li>
+  </ul>
+
+  <div class="callout">
+    <h4>📸 Why progress photos matter</h4>
+    <p>The scale doesn't tell the whole story, especially with peptides like BPC-157 (healing) or semaglutide (body composition changes). Progress photos taken consistently over weeks reveal changes you can't see day-to-day. A side-by-side comparison of week 1 vs. week 8 is often the most powerful proof that your protocol is working.</p>
+  </div>
+
+  <h2>Tracking Methods Compared</h2>
+  <p>There's no single "right" way to track. Here's how the common approaches stack up:</p>
+
+  <table class="article-table">
+    <thead>
+      <tr>
+        <th>Method</th>
+        <th>Pros</th>
+        <th>Cons</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><strong>Memory</strong></td>
+        <td>Free, zero effort</td>
+        <td>Unreliable. You <em>will</em> forget.</td>
+      </tr>
+      <tr>
+        <td><strong>Notes app</strong></td>
+        <td>Simple, always on your phone</td>
+        <td>No calculations, no reminders, gets messy fast</td>
+      </tr>
+      <tr>
+        <td><strong>Spreadsheet</strong></td>
+        <td>Customizable, can do calculations</td>
+        <td>Tedious to update, no notifications, bad on mobile</td>
+      </tr>
+      <tr>
+        <td><strong>Calendar reminders</strong></td>
+        <td>Reliable timing prompts</td>
+        <td>No dose calculations, no logging, no expiration tracking</td>
+      </tr>
+      <tr>
+        <td><strong>Generic med tracker</strong></td>
+        <td>Designed for tracking</td>
+        <td>Doesn't understand reconstitution, concentrations, or syringe math</td>
+      </tr>
+      <tr>
+        <td><strong>Dedicated peptide app</strong></td>
+        <td>Built for this exact use case</td>
+        <td>Fewer options available</td>
+      </tr>
+    </tbody>
+  </table>
+
+  <p>The key insight: whatever system you choose, you need to actually use it consistently. The best tracker in the world is useless if you stop updating it after day 3.</p>
+
+  <h2>Building Your System: A Practical Approach</h2>
+  <p>Here's a step-by-step approach that works whether you use an app, spreadsheet, or paper:</p>
+  <ol>
+    <li><strong>Set up before you start.</strong> Enter all your peptide info, concentrations, and schedules before your first dose. Don't try to build your system while you're already mid-protocol.</li>
+    <li><strong>Make logging automatic.</strong> Tie it to the action: don't inject until you've opened your tracker. Make it a rule, not a suggestion.</li>
+    <li><strong>Set reminders you can't ignore.</strong> Phone notifications, alarms, whatever works. Consistency matters more than anything else with peptides.</li>
+    <li><strong>Review weekly.</strong> Spend 5 minutes looking at your log. Did you miss any doses? Any patterns in side effects? Is a vial expiring soon?</li>
+    <li><strong>Take progress photos on a schedule.</strong> Same day each week, same conditions. You'll be amazed at the changes you notice in side-by-side comparisons that you completely missed day-to-day.</li>
+  </ol>
+
+  <h2>Common Mistakes to Avoid</h2>
+  <ul>
+    <li><strong>Not labeling vials.</strong> Identical vials with different peptides are a recipe for disaster. Sharpie. Every. Vial.</li>
+    <li><strong>Using the wrong concentration.</strong> If you reconstituted two vials of the same peptide with different water volumes, they have different concentrations. Track each vial separately.</li>
+    <li><strong>Ignoring expiration dates.</strong> Using a degraded peptide isn't dangerous (usually), but it is wasteful. You're injecting expensive water at that point.</li>
+    <li><strong>"I'll log it later."</strong> No, you won't. Log it now or accept that it won't get logged.</li>
+    <li><strong>Only tracking weight.</strong> Weight fluctuates daily due to water retention, food, and dozens of other variables. Weekly weigh-ins combined with progress photos give you the real picture.</li>
+  </ul>
+
+  <div class="cta-box">
+    <h3>Track Your Peptides the Easy Way</h3>
+    <p>PepMinder handles dose calculations, expiration tracking, injection site rotation, reminders, progress photos, and weight logging — all in one app. 100% free, no account required, all data stays on your device.</p>
+    <a href="https://play.google.com/store/apps/details?id=com.pepminder.pep_minder" class="cta-button" target="_blank" rel="noopener">Download Free on Google Play</a>
+  </div>
+
+  <h2>Frequently Asked Questions</h2>
+
+  <h3>How do I calculate my peptide dose in units?</h3>
+  <p>Divide the peptide amount (mcg) by the BAC water volume (mL) to get your concentration. Then divide your desired dose by the concentration to get mL needed, and multiply by 100 to convert to syringe units. Example: 5mg vial + 2mL water = 2500mcg/mL. For 250mcg: 250 ÷ 2500 = 0.1mL = 10 units.</p>
+
+  <h3>How long do reconstituted peptides last?</h3>
+  <p>Most reconstituted peptides last 3-4 weeks refrigerated with bacteriostatic water. GH peptides tend to be shorter (2-3 weeks), while GLP-1s like semaglutide can go 4-6 weeks. Temperature control matters more than time — never leave reconstituted vials at room temperature.</p>
+
+  <h3>Why should I track my injections?</h3>
+  <p>To prevent missed or double doses, rotate injection sites properly, monitor expiration dates, and build a log that helps you evaluate what's working. Consistency is the biggest factor in peptide results, and tracking is how you stay consistent.</p>
+
+  <h3>What's the best way to track multiple peptides?</h3>
+  <p>Use a system that stores each peptide's concentration, schedule, and expiration separately. Physical labeling (Sharpie on vials) combined with digital tracking gives you the best of both worlds. Dedicated peptide apps like <a href="https://play.google.com/store/apps/details?id=com.pepminder.pep_minder">PepMinder</a> are designed specifically for this.</p>
+
+  <h3>Should I track progress with photos or just weight?</h3>
+  <p>Both, ideally. Weight tells part of the story but fluctuates daily. Progress photos taken weekly under consistent conditions show body composition changes that the scale misses entirely. Side-by-side comparisons over 4-8 weeks are often the most convincing evidence your protocol is working.</p>
+
+</article>
+
+<!-- Footer -->
+<footer>
+  <div class="container" style="max-width:1100px;margin:0 auto;padding:0 24px;">
+    <div class="footer-links">
+      <a href="/">Home</a>
+      <a href="/privacy.html">Privacy Policy</a>
+      <a href="/blog/">Blog</a>
+      <a href="https://play.google.com/store/apps/details?id=com.pepminder.pep_minder" target="_blank" rel="noopener">Google Play</a>
+    </div>
+    <p>&copy; 2026 PepMinder. All rights reserved. Google Play and the Google Play logo are trademarks of Google LLC.</p>
+  </div>
+</footer>
+
+</body>
+</html>
