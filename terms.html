@@ -1,110 +1,328 @@
-PEPMINDER TERMS OF USE
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Terms of Use — PepMinder</title>
+  <meta name="description" content="PepMinder Terms of Use. Read the terms and conditions for using the PepMinder app.">
+  <link rel="canonical" href="https://pepminder.app/terms.html">
 
-Last Updated: February 28, 2026
+  <meta property="og:title" content="Terms of Use — PepMinder">
+  <meta property="og:description" content="Terms and conditions for using the PepMinder peptide tracking app.">
+  <meta property="og:type" content="website">
+  <meta property="og:url" content="https://pepminder.app/terms.html">
 
-1. Introduction
+  <style>
+    *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+    :root {
+      --bg: #0a0e17;
+      --bg-card: #111827;
+      --accent: #00d4aa;
+      --accent2: #6366f1;
+      --accent-glow: rgba(0, 212, 170, 0.15);
+      --text: #e2e8f0;
+      --text-dim: #94a3b8;
+      --radius: 16px;
+    }
+    html { scroll-behavior: smooth; }
+    body {
+      font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, sans-serif;
+      background: var(--bg);
+      color: var(--text);
+      line-height: 1.7;
+      overflow-x: hidden;
+    }
+    a { color: var(--accent); text-decoration: none; }
+    a:hover { text-decoration: underline; }
 
-Welcome to PepMinder. These Terms of Use ("Terms") govern your access to and use of the PepMinder mobile application ("App"), operated by PepMinder ("we," "our," or "us"). By downloading, installing, or using the App, you agree to be bound by these Terms. If you do not agree to these Terms, do not use the App.
+    /* Nav */
+    nav {
+      position: fixed; top: 0; left: 0; right: 0; z-index: 100;
+      background: rgba(10, 14, 23, 0.85);
+      backdrop-filter: blur(20px);
+      border-bottom: 1px solid rgba(255,255,255,0.05);
+      padding: 16px 0;
+    }
+    nav .container { display: flex; align-items: center; justify-content: space-between; }
+    .nav-brand { display: flex; align-items: center; gap: 10px; font-weight: 700; font-size: 1.2rem; color: var(--text); }
+    .nav-brand img { width: 36px; height: 36px; border-radius: 8px; }
+    .nav-links { display: flex; gap: 28px; align-items: center; }
+    .nav-links a { color: var(--text-dim); font-size: 0.9rem; transition: color 0.2s; }
+    .nav-links a:hover { color: var(--accent); text-decoration: none; }
+    .nav-cta {
+      background: var(--accent); color: var(--bg) !important; font-weight: 700;
+      padding: 8px 20px; border-radius: 8px; font-size: 0.85rem;
+    }
+    .nav-cta:hover { opacity: 0.9; }
 
-2. Description of Service
+    .container { max-width: 1100px; margin: 0 auto; padding: 0 24px; }
 
-PepMinder is a peptide tracking and reminder application that helps users manage peptide protocols, schedules, dose calculations, and injection logs. The App is a personal organizational tool only.
+    /* Legal page layout */
+    .legal-hero {
+      padding: 140px 0 60px;
+      text-align: center;
+      background: radial-gradient(ellipse at 30% 20%, rgba(0,212,170,0.06) 0%, transparent 60%),
+                  radial-gradient(ellipse at 70% 80%, rgba(99,102,241,0.04) 0%, transparent 60%);
+    }
+    .legal-hero h1 {
+      font-size: 2.6rem;
+      font-weight: 900;
+      margin-bottom: 12px;
+      background: linear-gradient(135deg, var(--accent), var(--accent2));
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
+      background-clip: text;
+    }
+    .legal-hero .updated {
+      color: var(--text-dim);
+      font-size: 0.95rem;
+    }
 
-3. Medical Disclaimer
+    .legal-content {
+      max-width: 760px;
+      margin: 0 auto;
+      padding: 0 24px 80px;
+    }
+    .legal-content section {
+      background: var(--bg-card);
+      border: 1px solid rgba(255,255,255,0.05);
+      border-radius: var(--radius);
+      padding: 32px;
+      margin-bottom: 24px;
+    }
+    .legal-content h2 {
+      font-size: 1.3rem;
+      font-weight: 700;
+      margin-bottom: 16px;
+      color: var(--accent);
+    }
+    .legal-content h3 {
+      font-size: 1.05rem;
+      font-weight: 600;
+      margin: 20px 0 8px;
+      color: var(--text);
+    }
+    .legal-content p {
+      color: var(--text-dim);
+      margin-bottom: 12px;
+      font-size: 0.95rem;
+    }
+    .legal-content p:last-child { margin-bottom: 0; }
+    .legal-content ul {
+      color: var(--text-dim);
+      margin: 8px 0 12px 20px;
+      font-size: 0.95rem;
+    }
+    .legal-content li { margin-bottom: 6px; }
+    .legal-content a { color: var(--accent); }
 
-PepMinder does NOT provide medical advice, diagnosis, or treatment. The App is a tracking and reminder tool only. All peptide-related decisions, including dosing, scheduling, and administration, should be made in consultation with a qualified healthcare professional. Never rely on the App as a substitute for professional medical advice.
+    .legal-content .disclaimer-box {
+      background: rgba(99, 102, 241, 0.08);
+      border: 1px solid rgba(99, 102, 241, 0.2);
+      border-radius: 12px;
+      padding: 20px 24px;
+      margin-top: 12px;
+    }
+    .legal-content .disclaimer-box p {
+      color: var(--text);
+      font-weight: 500;
+    }
 
-4. Eligibility
+    .legal-content .uppercase {
+      text-transform: uppercase;
+      font-size: 0.88rem;
+      letter-spacing: 0.02em;
+    }
 
-You must be at least 18 years of age to use PepMinder. By using the App, you represent and warrant that you meet this age requirement.
+    .contact-highlight {
+      display: inline-block;
+      background: var(--accent-glow);
+      border: 1px solid rgba(0, 212, 170, 0.2);
+      border-radius: 8px;
+      padding: 4px 14px;
+      font-weight: 600;
+      color: var(--accent);
+    }
 
-5. User Accounts and Data
+    /* Footer */
+    footer {
+      padding: 40px 0; text-align: center;
+      border-top: 1px solid rgba(255,255,255,0.05);
+    }
+    footer p { color: var(--text-dim); font-size: 0.85rem; }
+    footer a { color: var(--accent); }
+    .footer-links { display: flex; gap: 24px; justify-content: center; margin-bottom: 16px; }
 
-5.1 Local Storage
+    @media (max-width: 768px) {
+      .legal-hero { padding: 120px 0 40px; }
+      .legal-hero h1 { font-size: 1.8rem; }
+      .legal-content section { padding: 24px 20px; }
+      .nav-links { display: none; }
+    }
+  </style>
+</head>
+<body>
 
-All data you enter into PepMinder is stored locally on your device. We do not maintain user accounts or store your data on external servers.
+<nav>
+  <div class="container">
+    <a href="/" class="nav-brand">
+      <img src="/images/PepMinder_logo.svg" alt="PepMinder logo" width="36" height="36">
+      PepMinder
+    </a>
+    <div class="nav-links">
+      <a href="/#features">Features</a>
+      <a href="/#screenshots">Screenshots</a>
+      <a href="/blog/">Blog</a>
+      <a href="https://play.google.com/store/apps/details?id=com.pepminder.pep_minder" class="nav-cta" target="_blank" rel="noopener">Get the App</a>
+    </div>
+  </div>
+</nav>
 
-5.2 Data Responsibility
+<div class="legal-hero">
+  <div class="container">
+    <h1>Terms of Use</h1>
+    <p class="updated">Last Updated: February 28, 2026</p>
+  </div>
+</div>
 
-You are solely responsible for the accuracy and completeness of the data you enter into the App. You are responsible for maintaining backups of your data using the App's export feature.
+<div class="legal-content">
 
-5.3 Data Loss
+  <section>
+    <h2>1. Introduction</h2>
+    <p>Welcome to PepMinder. These Terms of Use (&ldquo;Terms&rdquo;) govern your access to and use of the PepMinder mobile application (&ldquo;App&rdquo;), operated by PepMinder (&ldquo;we,&rdquo; &ldquo;our,&rdquo; or &ldquo;us&rdquo;). By downloading, installing, or using the App, you agree to be bound by these Terms. If you do not agree to these Terms, do not use the App.</p>
+  </section>
 
-We are not responsible for any data loss resulting from device failure, App uninstallation, software updates, or any other cause. We recommend using the backup feature regularly.
+  <section>
+    <h2>2. Description of Service</h2>
+    <p>PepMinder is a peptide tracking and reminder application that helps users manage peptide protocols, schedules, dose calculations, and injection logs. The App is a personal organizational tool only.</p>
+  </section>
 
-6. Subscriptions and Payments
+  <section>
+    <h2>3. Medical Disclaimer</h2>
+    <div class="disclaimer-box">
+      <p>PepMinder does NOT provide medical advice, diagnosis, or treatment. The App is a tracking and reminder tool only. All peptide-related decisions, including dosing, scheduling, and administration, should be made in consultation with a qualified healthcare professional. Never rely on the App as a substitute for professional medical advice.</p>
+    </div>
+  </section>
 
-6.1 Free and Premium Tiers
+  <section>
+    <h2>4. Eligibility</h2>
+    <p>You must be at least 18 years of age to use PepMinder. By using the App, you represent and warrant that you meet this age requirement.</p>
+  </section>
 
-PepMinder offers a free tier with limited features and a premium subscription ("PepMinder Pro") with additional functionality.
+  <section>
+    <h2>5. User Accounts and Data</h2>
 
-6.2 Auto-Renewable Subscriptions
+    <h3>5.1 Local Storage</h3>
+    <p>All data you enter into PepMinder is stored locally on your device. We do not maintain user accounts or store your data on external servers.</p>
 
-PepMinder Pro is available as an auto-renewable subscription. The following terms apply:
+    <h3>5.2 Data Responsibility</h3>
+    <p>You are solely responsible for the accuracy and completeness of the data you enter into the App. You are responsible for maintaining backups of your data using the App&rsquo;s export feature.</p>
 
-- Payment will be charged to your Apple ID account or Google Play account at confirmation of purchase.
-- Subscription automatically renews unless cancelled at least 24 hours before the end of the current billing period.
-- Your account will be charged for renewal within 24 hours prior to the end of the current period.
-- You can manage and cancel your subscriptions by going to your account settings in the App Store or Google Play Store after purchase.
-- Any unused portion of a free trial period, if offered, will be forfeited when you purchase a subscription.
+    <h3>5.3 Data Loss</h3>
+    <p>We are not responsible for any data loss resulting from device failure, App uninstallation, software updates, or any other cause. We recommend using the backup feature regularly.</p>
+  </section>
 
-6.3 Pricing
+  <section>
+    <h2>6. Subscriptions and Payments</h2>
 
-Subscription pricing is displayed within the App at the time of purchase. Prices may vary by region and are subject to change. Any price changes will apply to the next billing cycle following the change.
+    <h3>6.1 Free and Premium Tiers</h3>
+    <p>PepMinder offers a free tier with limited features and a premium subscription (&ldquo;PepMinder Pro&rdquo;) with additional functionality.</p>
 
-6.4 Refunds
+    <h3>6.2 Auto-Renewable Subscriptions</h3>
+    <p>PepMinder Pro is available as an auto-renewable subscription. The following terms apply:</p>
+    <ul>
+      <li>Payment will be charged to your Apple ID account or Google Play account at confirmation of purchase.</li>
+      <li>Subscription automatically renews unless cancelled at least 24 hours before the end of the current billing period.</li>
+      <li>Your account will be charged for renewal within 24 hours prior to the end of the current period.</li>
+      <li>You can manage and cancel your subscriptions by going to your account settings in the App Store or Google Play Store after purchase.</li>
+      <li>Any unused portion of a free trial period, if offered, will be forfeited when you purchase a subscription.</li>
+    </ul>
 
-Refund requests are handled by Apple (for iOS) or Google (for Android) according to their respective refund policies. We do not process refunds directly.
+    <h3>6.3 Pricing</h3>
+    <p>Subscription pricing is displayed within the App at the time of purchase. Prices may vary by region and are subject to change. Any price changes will apply to the next billing cycle following the change.</p>
 
-7. Advertisements
+    <h3>6.4 Refunds</h3>
+    <p>Refund requests are handled by Apple (for iOS) or Google (for Android) according to their respective refund policies. We do not process refunds directly.</p>
+  </section>
 
-The free tier of PepMinder displays advertisements provided by Google AdMob. By using the free tier, you consent to the display of such advertisements. Premium subscribers do not see advertisements.
+  <section>
+    <h2>7. Advertisements</h2>
+    <p>The free tier of PepMinder displays advertisements provided by Google AdMob. By using the free tier, you consent to the display of such advertisements. Premium subscribers do not see advertisements.</p>
+  </section>
 
-8. Intellectual Property
+  <section>
+    <h2>8. Intellectual Property</h2>
+    <p>All content, design, graphics, logos, and software associated with PepMinder are owned by us and are protected by applicable intellectual property laws. You may not copy, modify, distribute, or reverse engineer any part of the App.</p>
+  </section>
 
-All content, design, graphics, logos, and software associated with PepMinder are owned by us and are protected by applicable intellectual property laws. You may not copy, modify, distribute, or reverse engineer any part of the App.
+  <section>
+    <h2>9. Acceptable Use</h2>
+    <p>You agree not to:</p>
+    <ul>
+      <li>Use the App for any unlawful purpose</li>
+      <li>Attempt to reverse engineer, decompile, or disassemble the App</li>
+      <li>Remove or alter any proprietary notices or labels on the App</li>
+      <li>Use the App in any way that could damage, disable, or impair the App&rsquo;s functionality</li>
+    </ul>
+  </section>
 
-9. Acceptable Use
+  <section>
+    <h2>10. Disclaimer of Warranties</h2>
+    <p class="uppercase">The App is provided &ldquo;as is&rdquo; and &ldquo;as available&rdquo; without warranties of any kind, either express or implied, including but not limited to implied warranties of merchantability, fitness for a particular purpose, and non-infringement. We do not warrant that the App will be uninterrupted, error-free, or free of harmful components.</p>
+  </section>
 
-You agree not to:
+  <section>
+    <h2>11. Limitation of Liability</h2>
+    <p class="uppercase">To the maximum extent permitted by applicable law, we shall not be liable for any indirect, incidental, special, consequential, or punitive damages, including but not limited to loss of data, loss of profits, or personal injury, arising out of or in connection with your use of the App.</p>
+    <div class="disclaimer-box">
+      <p>PepMinder is not responsible for any health outcomes resulting from actions taken based on information tracked or displayed by the App.</p>
+    </div>
+  </section>
 
-- Use the App for any unlawful purpose
-- Attempt to reverse engineer, decompile, or disassemble the App
-- Remove or alter any proprietary notices or labels on the App
-- Use the App in any way that could damage, disable, or impair the App's functionality
+  <section>
+    <h2>12. Indemnification</h2>
+    <p>You agree to indemnify and hold harmless PepMinder, its owners, and affiliates from any claims, damages, losses, or expenses arising out of your use of the App or violation of these Terms.</p>
+  </section>
 
-10. Disclaimer of Warranties
+  <section>
+    <h2>13. Modifications to Terms</h2>
+    <p>We reserve the right to modify these Terms at any time. Updated Terms will be posted within the App or on our website. Your continued use of the App after any changes constitutes acceptance of the new Terms.</p>
+  </section>
 
-THE APP IS PROVIDED "AS IS" AND "AS AVAILABLE" WITHOUT WARRANTIES OF ANY KIND, EITHER EXPRESS OR IMPLIED, INCLUDING BUT NOT LIMITED TO IMPLIED WARRANTIES OF MERCHANTABILITY, FITNESS FOR A PARTICULAR PURPOSE, AND NON-INFRINGEMENT. WE DO NOT WARRANT THAT THE APP WILL BE UNINTERRUPTED, ERROR-FREE, OR FREE OF HARMFUL COMPONENTS.
+  <section>
+    <h2>14. Termination</h2>
+    <p>We reserve the right to terminate or suspend your access to the App at any time, without notice, for conduct that we believe violates these Terms or is harmful to other users or us.</p>
+  </section>
 
-11. Limitation of Liability
+  <section>
+    <h2>15. Governing Law</h2>
+    <p>These Terms shall be governed by and construed in accordance with the laws of the United States, without regard to conflict of law principles.</p>
+  </section>
 
-TO THE MAXIMUM EXTENT PERMITTED BY APPLICABLE LAW, WE SHALL NOT BE LIABLE FOR ANY INDIRECT, INCIDENTAL, SPECIAL, CONSEQUENTIAL, OR PUNITIVE DAMAGES, INCLUDING BUT NOT LIMITED TO LOSS OF DATA, LOSS OF PROFITS, OR PERSONAL INJURY, ARISING OUT OF OR IN CONNECTION WITH YOUR USE OF THE APP.
+  <section>
+    <h2>16. Severability</h2>
+    <p>If any provision of these Terms is found to be unenforceable or invalid, that provision shall be limited or eliminated to the minimum extent necessary so that these Terms shall otherwise remain in full force and effect.</p>
+  </section>
 
-PEPMINDER IS NOT RESPONSIBLE FOR ANY HEALTH OUTCOMES RESULTING FROM ACTIONS TAKEN BASED ON INFORMATION TRACKED OR DISPLAYED BY THE APP.
+  <section>
+    <h2>17. Contact Us</h2>
+    <p>If you have questions about these Terms of Use, please contact us at:</p>
+    <p><span class="contact-highlight">support@pepminder.app</span></p>
+  </section>
 
-12. Indemnification
+</div>
 
-You agree to indemnify and hold harmless PepMinder, its owners, and affiliates from any claims, damages, losses, or expenses arising out of your use of the App or violation of these Terms.
+<footer>
+  <div class="container">
+    <div class="footer-links">
+      <a href="/privacy.html">Privacy Policy</a>
+      <a href="/terms.html">Terms of Use</a>
+      <a href="/blog/">Blog</a>
+      <a href="https://play.google.com/store/apps/details?id=com.pepminder.pep_minder" target="_blank" rel="noopener">Google Play</a>
+    </div>
+    <p>&copy; 2026 PepMinder. All rights reserved.</p>
+  </div>
+</footer>
 
-13. Modifications to Terms
-
-We reserve the right to modify these Terms at any time. Updated Terms will be posted within the App or on our website at https://pepminder.app/terms. Your continued use of the App after any changes constitutes acceptance of the new Terms.
-
-14. Termination
-
-We reserve the right to terminate or suspend your access to the App at any time, without notice, for conduct that we believe violates these Terms or is harmful to other users or us.
-
-15. Governing Law
-
-These Terms shall be governed by and construed in accordance with the laws of the United States, without regard to conflict of law principles.
-
-16. Severability
-
-If any provision of these Terms is found to be unenforceable or invalid, that provision shall be limited or eliminated to the minimum extent necessary so that these Terms shall otherwise remain in full force and effect.
-
-17. Contact Us
-
-If you have questions about these Terms of Use, please contact us at:
-
-Email: support@pepminder.app
+</body>
+</html>

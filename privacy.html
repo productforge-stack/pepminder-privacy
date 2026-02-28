@@ -1,78 +1,281 @@
-PEPMINDER PRIVACY POLICY
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Privacy Policy — PepMinder</title>
+  <meta name="description" content="PepMinder Privacy Policy. Learn how we handle your data — all stored locally on your device.">
+  <link rel="canonical" href="https://pepminder.app/privacy.html">
 
-Last Updated: January 14, 2026
+  <meta property="og:title" content="Privacy Policy — PepMinder">
+  <meta property="og:description" content="PepMinder Privacy Policy. Your data stays on your device.">
+  <meta property="og:type" content="website">
+  <meta property="og:url" content="https://pepminder.app/privacy.html">
 
-1. Introduction
+  <style>
+    *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+    :root {
+      --bg: #0a0e17;
+      --bg-card: #111827;
+      --accent: #00d4aa;
+      --accent2: #6366f1;
+      --accent-glow: rgba(0, 212, 170, 0.15);
+      --text: #e2e8f0;
+      --text-dim: #94a3b8;
+      --radius: 16px;
+    }
+    html { scroll-behavior: smooth; }
+    body {
+      font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, sans-serif;
+      background: var(--bg);
+      color: var(--text);
+      line-height: 1.7;
+      overflow-x: hidden;
+    }
+    a { color: var(--accent); text-decoration: none; }
+    a:hover { text-decoration: underline; }
 
-PepMinder ("we," "our," or "the App") is a peptide tracking and reminder application. This Privacy Policy explains how we collect, use, and protect your information when you use our mobile application.
+    /* Nav */
+    nav {
+      position: fixed; top: 0; left: 0; right: 0; z-index: 100;
+      background: rgba(10, 14, 23, 0.85);
+      backdrop-filter: blur(20px);
+      border-bottom: 1px solid rgba(255,255,255,0.05);
+      padding: 16px 0;
+    }
+    nav .container { display: flex; align-items: center; justify-content: space-between; }
+    .nav-brand { display: flex; align-items: center; gap: 10px; font-weight: 700; font-size: 1.2rem; color: var(--text); }
+    .nav-brand img { width: 36px; height: 36px; border-radius: 8px; }
+    .nav-links { display: flex; gap: 28px; align-items: center; }
+    .nav-links a { color: var(--text-dim); font-size: 0.9rem; transition: color 0.2s; }
+    .nav-links a:hover { color: var(--accent); text-decoration: none; }
+    .nav-cta {
+      background: var(--accent); color: var(--bg) !important; font-weight: 700;
+      padding: 8px 20px; border-radius: 8px; font-size: 0.85rem;
+    }
+    .nav-cta:hover { opacity: 0.9; }
 
-2. Information We Collect
+    .container { max-width: 1100px; margin: 0 auto; padding: 0 24px; }
 
-2.1 Data You Provide
+    /* Legal page layout */
+    .legal-hero {
+      padding: 140px 0 60px;
+      text-align: center;
+      background: radial-gradient(ellipse at 30% 20%, rgba(0,212,170,0.06) 0%, transparent 60%),
+                  radial-gradient(ellipse at 70% 80%, rgba(99,102,241,0.04) 0%, transparent 60%);
+    }
+    .legal-hero h1 {
+      font-size: 2.6rem;
+      font-weight: 900;
+      margin-bottom: 12px;
+      background: linear-gradient(135deg, var(--accent), var(--accent2));
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
+      background-clip: text;
+    }
+    .legal-hero .updated {
+      color: var(--text-dim);
+      font-size: 0.95rem;
+    }
 
-All personal data you enter into PepMinder—including peptide information, schedules, dose logs, weight entries, and notes—is stored locally on your device only. This data is never transmitted to our servers or any third party.
+    .legal-content {
+      max-width: 760px;
+      margin: 0 auto;
+      padding: 0 24px 80px;
+    }
+    .legal-content section {
+      background: var(--bg-card);
+      border: 1px solid rgba(255,255,255,0.05);
+      border-radius: var(--radius);
+      padding: 32px;
+      margin-bottom: 24px;
+    }
+    .legal-content h2 {
+      font-size: 1.3rem;
+      font-weight: 700;
+      margin-bottom: 16px;
+      color: var(--accent);
+    }
+    .legal-content h3 {
+      font-size: 1.05rem;
+      font-weight: 600;
+      margin: 20px 0 8px;
+      color: var(--text);
+    }
+    .legal-content p {
+      color: var(--text-dim);
+      margin-bottom: 12px;
+      font-size: 0.95rem;
+    }
+    .legal-content p:last-child { margin-bottom: 0; }
+    .legal-content ul {
+      color: var(--text-dim);
+      margin: 8px 0 12px 20px;
+      font-size: 0.95rem;
+    }
+    .legal-content li { margin-bottom: 6px; }
+    .legal-content a { color: var(--accent); }
 
-2.2 Data Collected Automatically
+    .contact-highlight {
+      display: inline-block;
+      background: var(--accent-glow);
+      border: 1px solid rgba(0, 212, 170, 0.2);
+      border-radius: 8px;
+      padding: 4px 14px;
+      font-weight: 600;
+      color: var(--accent);
+    }
 
-The App uses third-party services that may collect certain information automatically:
+    /* Footer */
+    footer {
+      padding: 40px 0; text-align: center;
+      border-top: 1px solid rgba(255,255,255,0.05);
+    }
+    footer p { color: var(--text-dim); font-size: 0.85rem; }
+    footer a { color: var(--accent); }
+    .footer-links { display: flex; gap: 24px; justify-content: center; margin-bottom: 16px; }
 
-• Google AdMob (for free users): Collects advertising identifiers, device information, and general location (country/region) to serve relevant ads. See Google's Privacy Policy: https://policies.google.com/privacy
+    @media (max-width: 768px) {
+      .legal-hero { padding: 120px 0 40px; }
+      .legal-hero h1 { font-size: 1.8rem; }
+      .legal-content section { padding: 24px 20px; }
+      .nav-links { display: none; }
+    }
+  </style>
+</head>
+<body>
 
-• Google Play Billing: When you make in-app purchases, Google processes your payment information. We do not have access to your payment details. See Google Play's Terms of Service: https://play.google.com/about/play-terms/
+<nav>
+  <div class="container">
+    <a href="/" class="nav-brand">
+      <img src="/images/PepMinder_logo.svg" alt="PepMinder logo" width="36" height="36">
+      PepMinder
+    </a>
+    <div class="nav-links">
+      <a href="/#features">Features</a>
+      <a href="/#screenshots">Screenshots</a>
+      <a href="/blog/">Blog</a>
+      <a href="https://play.google.com/store/apps/details?id=com.pepminder.pep_minder" class="nav-cta" target="_blank" rel="noopener">Get the App</a>
+    </div>
+  </div>
+</nav>
 
-2.3 Data We Do NOT Collect
+<div class="legal-hero">
+  <div class="container">
+    <h1>Privacy Policy</h1>
+    <p class="updated">Last Updated: January 14, 2026</p>
+  </div>
+</div>
 
-We do not collect:
+<div class="legal-content">
 
-Your name, email, or contact information
-Health or medical records
-Precise location data
-Photos or media files
-Contacts or call logs
-Any data you enter into the App
-3. How We Use Information
+  <section>
+    <h2>1. Introduction</h2>
+    <p>PepMinder (&ldquo;we,&rdquo; &ldquo;our,&rdquo; or &ldquo;the App&rdquo;) is a peptide tracking and reminder application. This Privacy Policy explains how we collect, use, and protect your information when you use our mobile application.</p>
+  </section>
 
-Local App Data: Used solely to provide app functionality (tracking, reminders, calculations). Never leaves your device.
-Advertising Data: Used by Google AdMob to display ads to free users.
-Purchase Data: Used by Google Play to process premium subscriptions.
-4. Data Storage and Security
+  <section>
+    <h2>2. Information We Collect</h2>
 
-All peptide, schedule, and log data is stored locally on your device using encrypted database storage. We do not have access to this data. If you uninstall the App, all local data is permanently deleted unless you have created a backup.
+    <h3>2.1 Data You Provide</h3>
+    <p>All personal data you enter into PepMinder &mdash; including peptide information, schedules, dose logs, weight entries, and notes &mdash; is stored locally on your device only. This data is never transmitted to our servers or any third party.</p>
 
-5. Data Sharing
+    <h3>2.2 Data Collected Automatically</h3>
+    <p>The App uses third-party services that may collect certain information automatically:</p>
+    <ul>
+      <li><strong>Google AdMob</strong> (for free users): Collects advertising identifiers, device information, and general location (country/region) to serve relevant ads. See <a href="https://policies.google.com/privacy" target="_blank" rel="noopener">Google&rsquo;s Privacy Policy</a>.</li>
+      <li><strong>Google Play Billing / Apple In-App Purchases</strong>: When you make in-app purchases, your platform provider processes your payment information. We do not have access to your payment details.</li>
+    </ul>
 
-We do not sell, trade, or share your personal data with third parties, except:
+    <h3>2.3 Data We Do NOT Collect</h3>
+    <p>We do not collect:</p>
+    <ul>
+      <li>Your name, email, or contact information</li>
+      <li>Health or medical records</li>
+      <li>Precise location data</li>
+      <li>Photos or media files</li>
+      <li>Contacts or call logs</li>
+      <li>Any data you enter into the App</li>
+    </ul>
+  </section>
 
-Google AdMob: Receives advertising identifiers for ad delivery (free users only)
-Google Play: Processes subscription payments
-6. Your Choices and Rights
+  <section>
+    <h2>3. How We Use Information</h2>
+    <ul>
+      <li><strong>Local App Data:</strong> Used solely to provide app functionality (tracking, reminders, calculations). Never leaves your device.</li>
+      <li><strong>Advertising Data:</strong> Used by Google AdMob to display ads to free users.</li>
+      <li><strong>Purchase Data:</strong> Used by Apple or Google to process premium subscriptions.</li>
+    </ul>
+  </section>
 
-Opt out of personalized ads: You can opt out of personalized advertising in your device settings under Google > Ads.
-Delete your data: Uninstall the App to delete all locally stored data, or use the App's settings to clear data.
-Backup/Export: You can export your data using the App's backup feature before deletion.
-Premium subscription: Upgrade to remove all advertising and associated data collection.
-7. Children's Privacy
+  <section>
+    <h2>4. Data Storage and Security</h2>
+    <p>All peptide, schedule, and log data is stored locally on your device using encrypted database storage. We do not have access to this data. If you uninstall the App, all local data is permanently deleted unless you have created a backup.</p>
+  </section>
 
-PepMinder is not intended for use by children under 18. We do not knowingly collect information from children. If you believe a child has provided data through our App, please contact us.
+  <section>
+    <h2>5. Data Sharing</h2>
+    <p>We do not sell, trade, or share your personal data with third parties, except:</p>
+    <ul>
+      <li><strong>Google AdMob:</strong> Receives advertising identifiers for ad delivery (free users only)</li>
+      <li><strong>Apple / Google Play:</strong> Processes subscription payments</li>
+    </ul>
+  </section>
 
-8. Third-Party Services
+  <section>
+    <h2>6. Your Choices and Rights</h2>
+    <ul>
+      <li><strong>Opt out of personalized ads:</strong> You can opt out of personalized advertising in your device settings.</li>
+      <li><strong>Delete your data:</strong> Uninstall the App to delete all locally stored data, or use the App&rsquo;s settings to clear data.</li>
+      <li><strong>Backup/Export:</strong> You can export your data using the App&rsquo;s backup feature before deletion.</li>
+      <li><strong>Premium subscription:</strong> Upgrade to remove all advertising and associated data collection.</li>
+    </ul>
+  </section>
 
-The App uses the following third-party services:
+  <section>
+    <h2>7. Children&rsquo;s Privacy</h2>
+    <p>PepMinder is not intended for use by children under 18. We do not knowingly collect information from children. If you believe a child has provided data through our App, please contact us.</p>
+  </section>
 
-Google AdMob (Advertising)
-Google Play Billing (In-App Purchases)
-Each service operates under its own privacy policy, which we encourage you to review.
+  <section>
+    <h2>8. Third-Party Services</h2>
+    <p>The App uses the following third-party services:</p>
+    <ul>
+      <li>Google AdMob (Advertising)</li>
+      <li>Apple In-App Purchases / Google Play Billing (Subscriptions)</li>
+    </ul>
+    <p>Each service operates under its own privacy policy, which we encourage you to review.</p>
+  </section>
 
-9. Changes to This Policy
+  <section>
+    <h2>9. Changes to This Policy</h2>
+    <p>We may update this Privacy Policy from time to time. We will notify you of any significant changes by posting the new policy within the App or on our website. Your continued use of the App after changes constitutes acceptance of the updated policy.</p>
+  </section>
 
-We may update this Privacy Policy from time to time. We will notify you of any significant changes by posting the new policy within the App or on our website. Your continued use of the App after changes constitutes acceptance of the updated policy.
+  <section>
+    <h2>10. Contact Us</h2>
+    <p>If you have questions about this Privacy Policy, please contact us at:</p>
+    <p><span class="contact-highlight">support@pepminder.app</span></p>
+  </section>
 
-10. Contact Us
+  <section>
+    <h2>11. Disclaimer</h2>
+    <p>PepMinder is a tracking and reminder tool only. It does not provide medical advice, diagnosis, or treatment. Always consult a qualified healthcare professional before beginning any peptide or medication regimen.</p>
+  </section>
 
-If you have questions about this Privacy Policy, please contact us at:
+</div>
 
-Email: support@pepminder.app
+<footer>
+  <div class="container">
+    <div class="footer-links">
+      <a href="/privacy.html">Privacy Policy</a>
+      <a href="/terms.html">Terms of Use</a>
+      <a href="/blog/">Blog</a>
+      <a href="https://play.google.com/store/apps/details?id=com.pepminder.pep_minder" target="_blank" rel="noopener">Google Play</a>
+    </div>
+    <p>&copy; 2026 PepMinder. All rights reserved.</p>
+  </div>
+</footer>
 
-11. Disclaimer
-
-PepMinder is a tracking and reminder tool only. It does not provide medical advice, diagnosis, or treatment. Always consult a qualified healthcare professional before beginning any peptide or medication regimen.
+</body>
+</html>
