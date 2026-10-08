@@ -2,18 +2,73 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   <url>
     <loc>https://pepminder.app/</loc>
-    <lastmod>2026-02-12</lastmod>
+    <lastmod>2026-10-08</lastmod>
     <priority>1.0</priority>
   </url>
   <url>
+    <loc>https://pepminder.app/no-account-peptide-tracker.html</loc>
+    <lastmod>2026-10-08</lastmod>
+    <priority>0.9</priority>
+  </url>
+  <url>
+    <loc>https://pepminder.app/compare/</loc>
+    <lastmod>2026-10-08</lastmod>
+    <priority>0.9</priority>
+  </url>
+  <url>
+    <loc>https://pepminder.app/compare/pepminder-vs-smart-peptide-tracker.html</loc>
+    <lastmod>2026-10-08</lastmod>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://pepminder.app/compare/pepminder-vs-regimen.html</loc>
+    <lastmod>2026-10-08</lastmod>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://pepminder.app/compare/pepminder-vs-peptiq.html</loc>
+    <lastmod>2026-10-08</lastmod>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://pepminder.app/compare/pepminder-vs-dose-track.html</loc>
+    <lastmod>2026-10-08</lastmod>
+    <priority>0.8</priority>
+  </url>
+  <url>
     <loc>https://pepminder.app/blog/</loc>
-    <lastmod>2026-02-12</lastmod>
+    <lastmod>2026-10-08</lastmod>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://pepminder.app/blog/best-peptide-tracker-apps-android-2026.html</loc>
+    <lastmod>2026-10-08</lastmod>
+    <priority>0.9</priority>
+  </url>
+  <url>
+    <loc>https://pepminder.app/blog/peptide-reconstitution-calculator-guide.html</loc>
+    <lastmod>2026-10-08</lastmod>
+    <priority>0.9</priority>
+  </url>
+  <url>
+    <loc>https://pepminder.app/blog/insulin-syringe-units-explained.html</loc>
+    <lastmod>2026-10-08</lastmod>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://pepminder.app/blog/how-to-track-glp1-doses.html</loc>
+    <lastmod>2026-10-08</lastmod>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://pepminder.app/blog/injection-site-rotation-tracker.html</loc>
+    <lastmod>2026-10-08</lastmod>
     <priority>0.8</priority>
   </url>
   <url>
     <loc>https://pepminder.app/blog/how-to-track-your-peptide-protocol.html</loc>
-    <lastmod>2026-02-12</lastmod>
-    <priority>0.9</priority>
+    <lastmod>2026-10-08</lastmod>
+    <priority>0.8</priority>
   </url>
   <url>
     <loc>https://pepminder.app/privacy.html</loc>

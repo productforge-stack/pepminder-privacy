@@ -1,0 +1,112 @@
+/* Shared styles for generated pages (blog, compare, landing). Matches index.html palette. */
+*, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+:root {
+  --bg: #0a0e17;
+  --bg-card: #111827;
+  --accent: #00d4aa;
+  --accent2: #6366f1;
+  --warn: #f59e0b;
+  --text: #e2e8f0;
+  --text-dim: #94a3b8;
+  --line: rgba(255,255,255,0.07);
+  --radius: 16px;
+}
+html { scroll-behavior: smooth; }
+body {
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, sans-serif;
+  background: var(--bg); color: var(--text); line-height: 1.7; overflow-x: hidden;
+}
+a { color: var(--accent); text-decoration: none; }
+a:hover { text-decoration: underline; }
+img { max-width: 100%; height: auto; }
+
+nav {
+  position: fixed; top: 0; left: 0; right: 0; z-index: 100;
+  background: rgba(10, 14, 23, 0.85); backdrop-filter: blur(20px);
+  border-bottom: 1px solid rgba(255,255,255,0.05); padding: 16px 0;
+}
+nav .container { display: flex; align-items: center; justify-content: space-between; max-width: 1100px; margin: 0 auto; padding: 0 24px; }
+.nav-brand { display: flex; align-items: center; gap: 10px; font-weight: 700; font-size: 1.2rem; color: var(--text); }
+.nav-brand img { width: 36px; height: 36px; border-radius: 8px; }
+.nav-links { display: flex; gap: 28px; align-items: center; }
+.nav-links a { color: var(--text-dim); font-size: 0.9rem; }
+.nav-links a:hover { color: var(--accent); text-decoration: none; }
+.nav-cta { background: var(--accent); color: var(--bg) !important; font-weight: 700; padding: 8px 20px; border-radius: 8px; font-size: 0.85rem; }
+
+.page { max-width: 760px; margin: 0 auto; padding: 120px 24px 80px; }
+.page .meta { color: var(--text-dim); font-size: 0.9rem; margin-bottom: 12px; }
+.page h1 {
+  font-size: 2.3rem; font-weight: 900; line-height: 1.15; margin-bottom: 24px;
+  background: linear-gradient(135deg, var(--accent), var(--accent2));
+  -webkit-background-clip: text; -webkit-text-fill-color: transparent; background-clip: text;
+}
+.page h2 { font-size: 1.55rem; font-weight: 800; margin: 48px 0 16px; }
+.page h3 { font-size: 1.2rem; font-weight: 700; margin: 32px 0 12px; color: var(--accent); }
+.page p { margin-bottom: 18px; font-size: 1.05rem; }
+.page ul, .page ol { margin: 0 0 24px 24px; }
+.page li { margin-bottom: 10px; font-size: 1.05rem; }
+.page strong { color: var(--text); }
+.page hr { border: 0; border-top: 1px solid var(--line); margin: 40px 0; }
+.page em { color: var(--text-dim); }
+.page blockquote {
+  background: var(--bg-card); border-left: 4px solid var(--accent);
+  border-radius: 0 var(--radius) var(--radius) 0; padding: 20px 24px; margin: 28px 0;
+}
+.page blockquote p { margin-bottom: 0; color: var(--text-dim); font-size: 0.98rem; }
+.page pre {
+  background: var(--bg-card); border: 1px solid var(--line); border-radius: var(--radius);
+  padding: 20px 24px; margin: 24px 0; overflow-x: auto;
+}
+.page code { font-family: 'Courier New', Courier, monospace; font-size: 0.95rem; color: var(--accent); }
+
+/* Tables scroll inside their own box so the page never scrolls sideways on phones */
+.table-wrap { overflow-x: auto; margin: 24px 0; border: 1px solid var(--line); border-radius: 12px; }
+.table-wrap table { width: 100%; border-collapse: collapse; font-size: 0.93rem; }
+/* Wide tables (4+ columns) keep a minimum width and scroll inside their box */
+.table-wrap table:has(th:nth-child(4)) { min-width: 560px; }
+.table-wrap th, .table-wrap td { padding: 11px 14px; text-align: left; border-bottom: 1px solid var(--line); vertical-align: top; }
+.table-wrap th { color: var(--accent); font-weight: 700; font-size: 0.8rem; text-transform: uppercase; letter-spacing: 0.05em; background: var(--bg-card); }
+.table-wrap td { color: var(--text-dim); }
+.table-wrap td strong { color: var(--text); }
+.table-wrap tr:last-child td { border-bottom: 0; }
+
+.disclosure {
+  background: var(--bg-card); border: 1px solid var(--line); border-radius: 12px;
+  padding: 14px 18px; margin: 0 0 32px; font-size: 0.92rem; color: var(--text-dim);
+}
+
+.cta-box {
+  background: linear-gradient(135deg, rgba(0,212,170,0.1), rgba(99,102,241,0.1));
+  border: 1px solid rgba(0,212,170,0.2); border-radius: var(--radius);
+  padding: 32px; text-align: center; margin: 48px 0;
+}
+.cta-box h3 { color: var(--text); font-size: 1.35rem; margin: 0 0 10px; }
+.cta-box p { color: var(--text-dim); margin-bottom: 20px; }
+.cta-button {
+  display: inline-block; background: var(--accent); color: var(--bg) !important; font-weight: 700;
+  padding: 14px 32px; border-radius: 10px; font-size: 1rem;
+}
+.cta-button:hover { opacity: 0.9; text-decoration: none; }
+
+.card-list { display: grid; gap: 16px; margin: 24px 0 32px; }
+.card-list a {
+  display: block; background: var(--bg-card); border: 1px solid var(--line);
+  border-radius: var(--radius); padding: 20px 24px; color: var(--text);
+}
+.card-list a:hover { border-color: rgba(0,212,170,0.3); text-decoration: none; }
+.card-list a span { display: block; color: var(--text-dim); font-size: 0.92rem; margin-top: 4px; }
+
+.legal { color: var(--text-dim); font-size: 0.88rem; border-top: 1px solid var(--line); padding-top: 20px; margin-top: 48px; }
+
+footer { padding: 40px 0; text-align: center; border-top: 1px solid rgba(255,255,255,0.05); }
+footer p { color: var(--text-dim); font-size: 0.85rem; }
+.footer-links { display: flex; flex-wrap: wrap; gap: 12px 24px; justify-content: center; margin-bottom: 16px; padding: 0 16px; }
+
+@media (max-width: 768px) {
+  .page { padding: 100px 16px 60px; }
+  .page h1 { font-size: 1.75rem; }
+  .page h2 { font-size: 1.3rem; }
+  .nav-links { gap: 14px; }
+  .nav-links a:not(.nav-cta) { display: none; }
+  .table-wrap th, .table-wrap td { padding: 9px 10px; font-size: 0.86rem; }
+}

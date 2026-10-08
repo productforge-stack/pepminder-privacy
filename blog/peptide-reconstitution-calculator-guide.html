@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Peptide Reconstitution Calculator: How to Calculate Doses (2026 Guide)</title>
+  <meta name="description" content="How peptide reconstitution math actually works: concentration, syringe units, and worked examples — plus a free Android calculator that does it for you.">
+  <link rel="canonical" href="https://pepminder.app/blog/peptide-reconstitution-calculator-guide.html">
+  <meta property="og:title" content="Peptide Reconstitution Calculator: How to Calculate Doses (2026 Guide)">
+  <meta property="og:description" content="How peptide reconstitution math actually works: concentration, syringe units, and worked examples — plus a free Android calculator that does it for you.">
+  <meta property="og:type" content="article">
+  <meta property="og:url" content="https://pepminder.app/blog/peptide-reconstitution-calculator-guide.html">
+  <meta property="og:image" content="https://pepminder.app/images/calculator_result.jpg">
+  <meta name="twitter:card" content="summary_large_image">
+  <link rel="icon" href="/images/PepMinder_logo.svg" type="image/svg+xml">
+  <link rel="stylesheet" href="/assets/site.css">
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "Article",
+  "headline": "Peptide Reconstitution Calculator: How to Calculate Doses (2026 Guide)",
+  "description": "How peptide reconstitution math actually works: concentration, syringe units, and worked examples — plus a free Android calculator that does it for you.",
+  "author": {
+    "@type": "Organization",
+    "name": "PepMinder",
+    "url": "https://pepminder.app"
+  },
+  "publisher": {
+    "@type": "Organization",
+    "name": "PepMinder",
+    "url": "https://pepminder.app"
+  },
+  "datePublished": "2026-10-08",
+  "dateModified": "2026-10-08",
+  "mainEntityOfPage": "https://pepminder.app/blog/peptide-reconstitution-calculator-guide.html"
+}
+</script>
+</head>
+<body>
+
+<nav>
+  <div class="container">
+    <a href="/" class="nav-brand">
+      <img src="/images/PepMinder_logo.svg" alt="PepMinder logo" width="36" height="36">
+      PepMinder
+    </a>
+    <div class="nav-links">
+      <a href="/#features">Features</a>
+      <a href="/compare/">Compare</a>
+      <a href="/blog/">Blog</a>
+      <a href="https://play.google.com/store/apps/details?id=com.pepminder.pep_minder" class="nav-cta" target="_blank" rel="noopener">Get the App</a>
+    </div>
+  </div>
+</nav>
+
+<article class="page">
+  <p class="meta">Updated October 8, 2026</p>
+<h1>Peptide Reconstitution Calculator: How the Math Works (With Examples)</h1>
+<p>Reconstitution math is where most tracking mistakes happen. The formula itself is simple —
+the errors come from unit conversions (mg vs mcg) and from translating a volume into marks
+on an insulin syringe. This guide walks through the math step by step, with worked examples,
+so you can sanity-check any calculator — including ours.</p>
+<p><strong>Note:</strong> this article explains arithmetic only. It does not recommend doses, compounds, or
+protocols. Your amounts come from you and your licensed healthcare provider.</p>
+<h2>Step 1: Concentration</h2>
+<p>When you add bacteriostatic (BAC) water to a lyophilized vial:</p>
+<pre><code>concentration (mg/mL) = vial amount (mg) ÷ BAC water added (mL)
+</code></pre>
+<p><strong>Example:</strong> a 5 mg vial + 2 mL of BAC water → 5 ÷ 2 = <strong>2.5 mg/mL</strong> (which is 2,500 mcg/mL).</p>
+<h2>Step 2: Volume per dose</h2>
+<pre><code>volume (mL) = dose (mg) ÷ concentration (mg/mL)
+</code></pre>
+<p><strong>Example:</strong> a 0.25 mg dose at 2.5 mg/mL → 0.25 ÷ 2.5 = <strong>0.1 mL</strong>.</p>
+<h2>Step 3: Convert volume to insulin syringe units</h2>
+<p>Insulin syringes are marked in "units" where <strong>100 units = 1 mL</strong> (U-100):</p>
+<pre><code>units = volume (mL) × 100
+</code></pre>
+<p>So 0.1 mL = <strong>10 units</strong> on a U-100 syringe. On a 30-unit or 50-unit syringe the scale is
+the same — the barrel is just smaller, so the marks are further apart and easier to read
+for small volumes.</p>
+<h2>The three mistakes that cause most errors</h2>
+<ol>
+<li><strong>mg/mcg confusion.</strong> 1 mg = 1,000 mcg. A dose written in mcg divided by a concentration
+   in mg/mL without converting gives an answer off by 1,000×. Always convert to the same
+   unit first.</li>
+<li><strong>"Units" ≠ dose.</strong> Syringe units measure <em>volume</em>, not compound. 10 units of a
+   2.5 mg/mL solution and 10 units of a 5 mg/mL solution contain different amounts.
+   If you change how much water you add, your draw changes too.</li>
+<li><strong>Losing track of reconstitution dates.</strong> Reconstituted peptides don't last forever.
+   If you don't log the date you mixed a vial, you're guessing at freshness weeks later.</li>
+</ol>
+<h2>Worked example, end to end</h2>
+<ul>
+<li>Vial: 10 mg. BAC water added: 3 mL.</li>
+<li>Concentration: 10 ÷ 3 = 3.33 mg/mL.</li>
+<li>Desired dose: 500 mcg = 0.5 mg.</li>
+<li>Volume: 0.5 ÷ 3.33 = 0.15 mL.</li>
+<li>Syringe: 0.15 × 100 = <strong>15 units</strong> on a U-100 syringe.</li>
+</ul>
+<h2>Or skip the math entirely</h2>
+<p>PepMinder (free on Android) does all of the above in one screen: enter vial size, water
+volume, and dose, and it shows mg/mL, mcg/mL, units to draw, and a <strong>visual syringe diagram</strong>
+with the fill line marked for 30, 50, and 100-unit syringes. It also logs when you
+reconstituted each vial and flags vials that are expiring — the two things a plain calculator
+can't do.</p>
+<p>Everything stays on your device: no account, no cloud.</p>
+<div class="cta-box">
+  <h3>Try PepMinder free on Android</h3>
+  <p>Reconstitution calculator, dose reminders, and an injection log in one private app. No account, works offline.</p>
+  <a href="https://play.google.com/store/apps/details?id=com.pepminder.pep_minder" class="cta-button" target="_blank" rel="noopener">Get it on Google Play</a>
+</div>
+<p class="legal">PepMinder is a personal tracking and calculation tool. It does not provide medical
+advice, diagnosis, dosing recommendations, or protocols, and it does not sell or link to any products.
+Always consult a licensed healthcare provider about your treatment.</p>
+</article>
+
+<footer>
+  <div class="footer-links">
+    <a href="/">Home</a>
+    <a href="/compare/">Compare apps</a>
+    <a href="/blog/">Blog</a>
+    <a href="/no-account-peptide-tracker.html">Privacy-first tracking</a>
+    <a href="/privacy.html">Privacy Policy</a>
+    <a href="/terms.html">Terms</a>
+    <a href="https://play.google.com/store/apps/details?id=com.pepminder.pep_minder" target="_blank" rel="noopener">Google Play</a>
+  </div>
+  <p>&copy; 2026 PepMinder. All rights reserved. Google Play and the Google Play logo are trademarks of Google LLC.
+  Other app names are trademarks of their respective owners and are used only to identify them.</p>
+</footer>
+
+</body>
+</html>
