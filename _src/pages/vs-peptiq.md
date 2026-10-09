@@ -2,8 +2,9 @@ title: PepMinder vs PeptIQ (2026): Price, Free Tier & Privacy Compared
 description: PepMinder vs PeptIQ compared on price, free tier, accounts, privacy, and AI features. Honest side-by-side, checked October 2026.
 path: compare/pepminder-vs-peptiq.html
 date: 2026-10-08
+modified: 2026-10-09
 type: article
-faq: Is PeptIQ free? ||| As of October 2026, PeptIQ has no ongoing free plan for its app. Its site says a free trial is available on request, and subscriptions are listed from about $19.99 to $24.99 a month, with annual plans from $49.99. PepMinder has a free tier for up to 2 peptides, with Pro at $4.99/month or $39.99/year.
+faq: Is PeptIQ free? ||| As of October 2026, PeptIQ has no ongoing free plan for its app. Its site says a free trial is available on request, and subscriptions are listed from about $19.99 to $24.99 a month, with annual plans from $49.99. PepMinder has a free tier for up to 2 peptides, with Pro at $4.99/month, $39.99/year, or $49.99 once for Lifetime.
 faq: Does PepMinder have AI features like PeptIQ? ||| No, by design. PepMinder is a calculator, reminder, and log. It doesn't generate protocols or give dosing guidance. If you want an AI companion, PeptIQ is built around one.
 ---
 # PepMinder vs PeptIQ
@@ -19,13 +20,14 @@ faq: Does PepMinder have AI features like PeptIQ? ||| No, by design. PepMinder i
 | Platforms | Android (iPhone coming) | iPhone, Android, web |
 | Android installs / rating | 1K+ · 4.8★ | 5K+ · 4.4★ |
 | Free tier | **2 peptides, ongoing** | No ongoing free plan (trial on request) |
-| Paid | **$4.99/mo or $39.99/yr** | ~$19.99–24.99/mo; annual from $49.99 |
+| Paid | **$4.99/mo, $39.99/yr, or $49.99 once** | ~$19.99–24.99/mo; annual from $49.99 |
 | Ads | Banners on free tier | None |
 | Account | **Never required** | Required (email sign-in) |
 | Data | **On your phone only** | Cloud sync across devices and web |
 | Onboarding | A few setup steps | Reviewers mention a long questionnaire |
 | Reconstitution calculator + syringe visual | ✅ | ✅ including blends |
 | Reminders with Taken/Skip | ✅ | ✅ |
+| Titration (dose steps) | ✅ Free | Not listed |
 | AI companion, vial scanner | — (by design) | ✅ |
 | Oura / WHOOP / Health Connect | — | ✅ |
 | Peptide encyclopedia and community | — | ✅ |
@@ -41,7 +43,7 @@ faq: Does PepMinder have AI features like PeptIQ? ||| No, by design. PepMinder i
 ## Where PepMinder wins
 
 - **You can actually try it free.** "No free option" is the most common complaint in PeptIQ's low-star reviews.
-- **About a quarter of the monthly price** for Pro.
+- **About a quarter of the monthly price** for Pro, or **$49.99 once** with nothing to renew.
 - **No account and no questionnaire.** Install it and start logging.
 - **Privacy.** Nothing about your protocol leaves your phone.
 

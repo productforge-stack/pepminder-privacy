@@ -2,6 +2,7 @@ title: Peptide Tracker With No Account: Private, Offline Dose Tracking for Andro
 description: PepMinder is a peptide tracker with no account, no sign-up, and no cloud. Your dose log, schedules, and vials stay on your phone and work fully offline.
 path: no-account-peptide-tracker.html
 date: 2026-10-08
+modified: 2026-10-09
 type: page
 faq: Do I need to create an account to use PepMinder? ||| No. PepMinder has no account system at all. There's no email, no password, and no sign-up. You install it and start tracking.
 faq: Where is my PepMinder data stored? ||| On your phone only. Peptides, schedules, dose logs, vials, weight entries, and photos are stored in a local database on your device and are never uploaded to our servers. You can make a full backup file yourself and keep it wherever you like.
@@ -38,10 +39,11 @@ PepMinder's free version shows **Google AdMob banner ads**. AdMob uses your devi
 ## What you get
 
 - **Reconstitution and dose calculator** with a visual 30/50/100-unit syringe diagram
-- **Reminders** with Mark Taken and Skip on the notification, which work offline and survive reboots
-- **Vial tracking** with low-supply alerts and expiry warnings
+- **Reminders** with Mark Taken, Snooze, and Skip on the notification, which work offline and survive reboots
+- **Titration steps** when your dose changes over time
+- **Vial tracking** with low-supply alerts and a reminder before a mixed vial expires
 - **Injection site log, weight trend, and progress photos**
-- **Free for up to 2 peptides.** Pro is $4.99/mo or $39.99/yr.
+- **Free for up to 2 peptides.** Pro is $4.99/mo or $39.99/yr, or $49.99 once for Lifetime. Even the purchase needs no PepMinder account; it's tied to your Google Play account.
 
 [[CTA]]
 

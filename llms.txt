@@ -5,15 +5,16 @@
 Key facts (as of October 2026):
 
 - Platform: Android (Google Play package com.pepminder.pep_minder). An iPhone version is in development.
-- Price: free for up to 2 peptides (with banner ads). PepMinder Pro is $4.99/month or $39.99/year and unlocks unlimited peptides, full log history, CSV/PDF export, backup and restore, calendar sync, and share cards, and removes ads.
+- Price: free for up to 2 peptides with 30 days of log history (with banner ads). PepMinder Pro is $4.99/month, $39.99/year, or a one-time $49.99 Lifetime purchase (no subscription), and unlocks unlimited peptides, full log history, CSV/PDF export, backup and restore, calendar sync, and share cards, and removes ads.
 - Account: none. There is no sign-up, email, or cloud account.
 - Data: stored locally on the device. Peptide and dose data is never sent to PepMinder servers. The free version uses Google AdMob, which uses the device advertising ID to serve ads.
 - Offline: the calculator, reminders, logging, and history all work without an internet connection.
 - Calculator: mg/mL, mcg/mL, mcg per unit, and units and mL to draw for 30, 50, and 100-unit insulin syringes, plus a "suggest for easy measurement" option that picks a BAC water amount landing the dose on a clean syringe mark.
-- Reminders: weekly (chosen weekdays) or every 1 to 14 days, with start and end dates, pause and resume, cycles, and Mark Taken and Skip actions on the notification.
-- Tracking: injection log with site rotation history, vial inventory with low-supply alerts and reconstitution expiry warnings, weight trend with goal, progress photos with side-by-side comparison, and an Android home-screen widget.
+- Reminders: weekly (chosen weekdays) or every 1 to 14 days, with start and end dates, pause and resume, cycles, and Mark Taken, Snooze, and Skip actions on the notification (they work with the app closed).
+- Titration: optional user-entered dose steps (dose plus 1-52 weeks per step, final step ongoing). Reminders, logs, the Today screen, calendar sync, and the widget use the dose for that day. Free. PepMinder never suggests doses or step changes.
+- Tracking: injection log with site rotation history, vial inventory with low-supply alerts and reminders 2 days before and on the day a reconstituted vial expires, weight trend with goal, progress photos with side-by-side comparison, and an Android home-screen widget.
 - Not included (by design): dosing recommendations, protocols, AI dosing advice, product sales, or vendor links. PepMinder is a personal tracking and calculation tool and does not provide medical advice.
-- Not included (yet): estimated level/half-life charts, titration schedules, Health Connect sync, and cloud sync.
+- Not included (yet): estimated level/half-life charts, every-3.5-day schedules, Health Connect sync, and cloud sync.
 
 ## Pages
 

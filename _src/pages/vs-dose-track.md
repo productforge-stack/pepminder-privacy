@@ -2,9 +2,10 @@ title: PepMinder vs Dose Track (2026): Peptide Tracker Comparison
 description: PepMinder vs Dose Track compared on price, free tier, simplicity, and features like level charts. Honest side-by-side, checked October 2026.
 path: compare/pepminder-vs-dose-track.html
 date: 2026-10-08
+modified: 2026-10-09
 type: article
 faq: Do PepMinder and Dose Track require an account? ||| Neither requires an account as of October 2026. Both keep your data on the device by default. Dose Track offers optional encrypted cloud backup.
-faq: Which is cheaper, PepMinder or Dose Track? ||| PepMinder Pro is $4.99/month or $39.99/year. Dose Track Pro is $6.99/month or $69.99/year. Dose Track's free tier covers up to 3 medications; PepMinder's covers 2 peptides.
+faq: Which is cheaper, PepMinder or Dose Track? ||| PepMinder Pro is $4.99/month, $39.99/year, or $49.99 once for Lifetime. Dose Track Pro is $6.99/month or $69.99/year, with no one-time option. Dose Track's free tier covers up to 3 medications; PepMinder's covers 2 peptides.
 ---
 # PepMinder vs Dose Track
 
@@ -19,10 +20,11 @@ faq: Which is cheaper, PepMinder or Dose Track? ||| PepMinder Pro is $4.99/month
 | Platforms | Android (iPhone coming) | iPhone, Android |
 | Android installs / rating | 1K+ · 4.8★ | 1K+ · 4.7★ |
 | Free tier | 2 peptides | Up to 3 medications |
-| Paid | **$4.99/mo or $39.99/yr** | $6.99/mo or $69.99/yr |
+| Paid | **$4.99/mo, $39.99/yr, or $49.99 once** | $6.99/mo or $69.99/yr |
 | Ads | Banners on free tier | None |
 | Account | Not required | Not required |
 | Reconstitution calculator | ✅ with 30/50/100-unit syringe diagram | ✅ |
+| Titration (dose steps) | ✅ Free | Not listed |
 | Estimated level / steady-state charts | — | ✅ |
 | AI coach, AI bloodwork reading | — (by design) | ✅ Pro |
 | Body map with rotation suggestions | Site log with "last used" | ✅ |
@@ -40,7 +42,8 @@ faq: Which is cheaper, PepMinder or Dose Track? ||| PepMinder Pro is $4.99/month
 ## Where PepMinder wins
 
 - **Less to learn.** Some Dose Track reviewers say there's "a ton going on" when they just want to log doses.
-- **Cheaper Pro**: $39.99/yr versus $69.99/yr.
+- **Cheaper Pro**: $39.99/yr versus $69.99/yr, or **$49.99 once**, less than a single year of Dose Track.
+- **Titration steps**, free, with reminders that switch dose automatically.
 - **Visual syringe diagram** and a water suggestion that lands your dose on a clean mark.
 - **Progress photos** with side-by-side comparison, and an **Android widget**.
 

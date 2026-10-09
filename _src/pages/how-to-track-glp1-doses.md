@@ -2,6 +2,7 @@ title: How to Track Semaglutide & Tirzepatide Doses (2026): App vs Spreadsheet
 description: A practical system for tracking GLP-1 injections: dose logs, injection site rotation, weight trends, and reminders — and why a spreadsheet stops working by week 6.
 path: blog/how-to-track-glp1-doses.html
 date: 2026-10-08
+modified: 2026-10-09
 type: article
 ---
 # How to Track GLP-1 Doses: Semaglutide & Tirzepatide Tracking That Actually Sticks
@@ -49,13 +50,17 @@ PepMinder was built for exactly this workflow:
   concentration. For compounded vials, the built-in calculator converts your dose to
   syringe units with a visual fill-line diagram.
 - **Create a schedule** — weekly, specific days, or custom intervals — and get reliable
-  notifications with *Mark Taken* and *Skip* actions right on the notification.
+  notifications with *Mark Taken*, *Snooze*, and *Skip* actions right on the notification.
+- **Enter your titration steps** if your prescriber's plan changes the dose over time
+  (for example 2.5 mg for 4 weeks, then 5 mg). Each reminder shows that week's dose, and
+  the reminder on a change day says which step starts. PepMinder never suggests doses or
+  changes; it only follows the steps you enter.
 - **Log injection sites** with rotation history.
 - **Track weight and progress photos** side by side with your dose log.
 - **Keep it private.** Everything is stored locally on your phone. No account, no cloud,
   no data leaving your device — which matters when the data is your medication history.
 
-The free tier covers 2 peptides — enough to see if the system sticks
-for you before upgrading.
+The free tier covers 2 peptides and 30 days of history, and titration is free. Pro is
+$39.99/year, or $49.99 once if you'd rather not subscribe.
 
 [[CTA]]
