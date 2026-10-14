@@ -29,6 +29,11 @@ Key facts (as of October 2026):
 - [How to track your peptide protocol](https://pepminder.app/blog/how-to-track-your-peptide-protocol.html)
 - [Privacy policy](https://pepminder.app/privacy.html)
 
+## Listings
+
+- [Google Play](https://play.google.com/store/apps/details?id=com.pepminder.pep_minder)
+- [AlternativeTo](https://alternativeto.net/software/pepminder/about/)
+
 ## Contact
 
 support@pepminder.app

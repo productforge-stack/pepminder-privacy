@@ -61,6 +61,7 @@ FOOTER = f"""<footer>
     <a href="/privacy.html">Privacy Policy</a>
     <a href="/terms.html">Terms</a>
     <a href="{PLAY}" target="_blank" rel="noopener">Google Play</a>
+    <a href="https://alternativeto.net/software/pepminder/about/" target="_blank" rel="noopener">AlternativeTo</a>
   </div>
   <p>&copy; 2026 PepMinder. All rights reserved. Google Play and the Google Play logo are trademarks of Google LLC.
   Other app names are trademarks of their respective owners and are used only to identify them.</p>
