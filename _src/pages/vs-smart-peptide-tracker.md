@@ -26,9 +26,9 @@ faq: Does Smart Peptide Tracker need an account? ||| As of October 2026, its Goo
 | Reconstitution calculator + syringe visual | ✅ 30/50/100-unit diagram | ✅ |
 | Reminders with Taken/Skip on the notification | ✅ | ✅ |
 | Vial inventory and low-supply alerts | ✅ | ✅ plus cost per dose and per month |
-| Injection site tracking | ✅ Site log with "last used" | ✅ Body map (front and back) |
+| Injection site tracking | ✅ Body map (front and back), days since last use | ✅ Body map (front and back) |
 | Titration (dose steps by week) | ✅ Free | ✅ Multi-step schedules |
-| Half-life graph | — | ✅ |
+| Half-life graph | ✅ Pro, with a half-life you enter | ✅ |
 | Biomarkers / labs | — | ✅ (add-on) |
 | Multiple people | — | ✅ Partner add-on |
 | AI assistant | — (by design) | ✅ Paid question packs |

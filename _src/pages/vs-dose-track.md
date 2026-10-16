@@ -25,9 +25,10 @@ faq: Which is cheaper, PepMinder or Dose Track? ||| PepMinder Pro is $4.99/month
 | Account | Not required | Not required |
 | Reconstitution calculator | ✅ with 30/50/100-unit syringe diagram | ✅ |
 | Titration (dose steps) | ✅ Free | Not listed |
-| Estimated level / steady-state charts | — | ✅ |
+| Estimated level chart | ✅ Pro, with a half-life you enter | ✅ From a 600+ compound library |
+| Steady-state chart and "Dial-In" simulator | — | ✅ |
 | AI coach, AI bloodwork reading | — (by design) | ✅ Pro |
-| Body map with rotation suggestions | Site log with "last used" | ✅ |
+| Body map | ✅ Front and back, days since each site was last used | ✅ With rotation suggestions |
 | Daily journal (mood, sleep, side effects) | Notes | ✅ |
 | HealthKit / Health Connect | — | ✅ |
 | Progress photos with side-by-side comparison | ✅ | — |

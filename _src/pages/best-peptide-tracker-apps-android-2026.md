@@ -39,11 +39,12 @@ PepMinder does the core loop well and stays out of your way: enter your vial siz
 - **"Suggest for easy measurement"** picks a water amount that lands your dose on a clean syringe mark.
 - **Dose changes over time (titration)**: enter the steps from your provider, for example 2.5 mg for 4 weeks then 5 mg, and reminders, logs, and the Today screen follow each step. Free.
 - **Vial tracking**: remaining supply drops as you log, with low-supply alerts and a reminder 2 days before a mixed vial expires.
-- **Site rotation log, weight trend, and progress photos** with side-by-side comparison.
+- **Body map site picker** (front and back) showing days since each site was last used, plus a **weight trend** and **progress photos** with side-by-side comparison.
+- **Estimated levels (Pro)**: enter a half-life from your provider or product information and see an illustrative curve of your logged doses and schedule. PepMinder doesn't ship half-life values; you enter your own.
 - **Android home-screen widget**, CSV/PDF export, and full backup and restore (Pro).
 - **Pay once if you prefer**: Lifetime Pro is $49.99 with no subscription.
 
-**Where it falls short:** no estimated-level (half-life) chart yet, no Health Connect sync, no every-3.5-day schedules, and no iPhone version yet. If you need those today, look at Regimen or Dose Track.
+**Where it falls short:** the level chart uses a half-life you enter rather than a built-in compound library, and there's no Health Connect sync, no every-3.5-day schedules, and no iPhone version yet. If you need those today, look at Regimen or Dose Track.
 
 **Best for:** Android users who want calculation, reminders, and logging in one private app without signing up for anything.
 

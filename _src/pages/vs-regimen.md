@@ -11,7 +11,7 @@ faq: How many peptides can I track for free in Regimen vs PepMinder? ||| As of O
 
 <div class="disclosure"><strong>Disclosure:</strong> we make PepMinder. Regimen is an excellent app for analysis, and we say so below. Details checked on Google Play and the App Store on <strong>October 8, 2026</strong>.</div>
 
-**Short version:** Regimen is the **analysis** app, with level curves and trend detection. PepMinder is the **private, offline** app: no account, more free peptides, a lower price, and a pay-once option. Both now handle titration.
+**Short version:** Regimen is the **analysis** app, with level curves and trend detection. PepMinder is the **private, offline** app: no account, more free peptides, a lower price, and a pay-once option. Both now handle titration and estimated level charts.
 
 ## Side by side
 
@@ -27,8 +27,8 @@ faq: How many peptides can I track for free in Regimen vs PepMinder? ||| As of O
 | Reconstitution calculator | ✅ with syringe diagram | ✅ four calculators |
 | Titration steps | ✅ Free | ✅ |
 | Every-3.5-day schedules | — | ✅ |
-| Estimated blood-level curves | — | ✅ |
-| Body map with auto-rotation | Site log with "last used" | ✅ |
+| Estimated level curves | ✅ Pro, with a half-life you enter | ✅ |
+| Body map | ✅ Front and back, days since each site was last used | ✅ With auto-rotation |
 | Check-ins, bloodwork, Health Connect | Weight and progress photos | ✅ 50+ markers, lab scanning, Health Connect |
 | Home-screen widget | ✅ Android | — |
 | Export | CSV and PDF (Pro), full backup | CSV import/export, provider PDF |
@@ -49,7 +49,7 @@ faq: How many peptides can I track for free in Regimen vs PepMinder? ||| As of O
 
 ## Which should you pick?
 
-- Choose **Regimen** if you want level curves, every-3.5-day schedules, or lab analysis, and you're comfortable with an account and a connection.
+- Choose **Regimen** if you want deeper level analysis, every-3.5-day schedules, or lab analysis, and you're comfortable with an account and a connection.
 - Choose **PepMinder** if you want reliable reminders (titration included), accurate syringe math, and a clean log that's private and works anywhere.
 
 [[CTA]]
